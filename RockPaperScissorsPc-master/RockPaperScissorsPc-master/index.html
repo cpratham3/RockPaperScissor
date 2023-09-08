@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 for Pranjal Chauhan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="heading">
+        <h1>Assignment 2<br>Pranjal Chauhan<br>Instructor: Amandeep Kaur</h1>
+    </div>
+    <div class="about">
+        <h3>
+            <ul>
+                <hr>
+                <h2>GAME INSTRUCTIONS</h2>
+                <hr>
+                <li>Press any of the options below(✊- for ROCK, 🖐️- for PAPER, ✌️-  for SCISSORS )</li>
+                <li>Once you choose, the computer choice will be shown by increasing the size of the choice image.</li>
+                <li>You can start the Game by pressing any of the choices</li>
+                <li>Once you press, the computer will choose its choice and a score will be kept running..</li>
+                <li>To end the game, press cancel on the confirm box and see the results.</li>
+            </ul>
+        </h3>
+    </div>
+    <hr>
+    <div class="makeSelection">
+        <button class="selection" id="rock" onclick="startGame('✊')">✊</button>
+        <button class="selection" id="paper" onclick="startGame('🖐️')">🖐️</button>
+        <button class="selection" id="scissor" onclick="startGame('✌️')">✌️</button>
+    </div>
+    <div class="results">
+        <div class="scores">
+            YOU:
+            <span id="resultScorePlayer">0</span>
+            <span id="playerChoseDisplay"></span>
+            <span id="playerWon"></span>
+        </div>
+        <div class="scores">
+            COMPUTER:
+            <span id="resultScoreComp">0</span>
+            <span id="compChoseDisplay"></span>
+            <span id="compWon"></span>
+            <!-- add a function that shows what the computer choice was. -->
+        </div>
+
+    </div>
+    <div class="finalResult">
+        <p>Final Result:<span id="finalR"></span></p>
+    </div>
+
+    <button id="clear" onclick="clearAll()">Reset</button>
+    <script src="script/script.js"></script>
+</body>
+</html>

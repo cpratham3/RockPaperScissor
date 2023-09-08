@@ -1,0 +1,53 @@
+body{
+    background-color:darkgray;
+    color: black;
+}
+
+.makeSelection{
+    display: flex;
+    justify-content: center;
+}
+
+.selection{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 4rem;
+    transition: all 0.2s;
+    padding: 30px;
+}
+
+.selection:hover{
+    transform: scale(1.2);
+}
+
+.scores{
+    font-size: 1.7rem;
+}
+.results{
+    display: grid;
+    margin-top: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+}
+#heading{
+    text-align: center;
+}
+.finalResult{
+    text-align: center;
+    font-size: 2.0rem;
+}
+#clear{
+    padding: 10px;
+    margin-left: 47%;
+    background-color: black;
+    color: yellow;
+    border-radius: 20%;
+    transition: padding 0.4s;
+}
+#clear:hover{
+    padding: 15px;
+
+}
